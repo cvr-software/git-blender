@@ -1,0 +1,395 @@
+[15:37:45] [Server thread/INFO]: Starting minecraft server version 1.14.4
+[15:37:45] [Server thread/INFO]: Loading properties
+[15:37:45] [Server console handler/ERROR]: Exception handling console input
+java.io.IOException: The handle is invalid
+	at java.io.FileInputStream.readBytes(Native Method) ~[?:?]
+	at java.io.FileInputStream.read(FileInputStream.java:273) ~[?:?]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:245) ~[?:?]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:264) ~[?:?]
+	at org.bukkit.craftbukkit.libs.jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:248) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.craftbukkit.libs.jline.internal.InputStreamReader.read(InputStreamReader.java:261) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.craftbukkit.libs.jline.internal.InputStreamReader.read(InputStreamReader.java:198) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readCharacter(ConsoleReader.java:2145) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLineSimple(ConsoleReader.java:3183) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLine(ConsoleReader.java:2333) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLine(ConsoleReader.java:2269) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLine(ConsoleReader.java:2257) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at net.minecraft.server.v1_14_R1.DedicatedServer$2.run(DedicatedServer.java:97) [spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+[15:37:46] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-56f8471-56118c6 (MC: 1.14.4) (Implementing API version 1.14.4-R0.1-SNAPSHOT)
+[15:37:46] [Server thread/INFO]: Debug logging is disabled
+[15:37:46] [Server thread/INFO]: Server Ping Player Sample Count: 12
+
+[15:37:46] [Server thread/INFO]: Using 4 threads for Netty based IO
+[15:37:46] [Server thread/INFO]: Default game type: SURVIVAL
+[15:37:46] [Server thread/INFO]: Generating keypair
+[15:37:46] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:37:46] [Server thread/INFO]: Using default channel type
+[15:37:52] [Server thread/WARN]: Plugin Multiverse-Core v2.5-b719 does not specify an api-version.
+[15:37:52] [Server thread/ERROR]: Could not load 'plugins\Multiverse-Portals-4.1.0.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: com/onarandombox/commandhandler/Command
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:139) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:334) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:253) [spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.craftbukkit.v1_14_R1.CraftServer.loadPlugins(CraftServer.java:350) [spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at net.minecraft.server.v1_14_R1.DedicatedServer.init(DedicatedServer.java:202) [spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.run(MinecraftServer.java:775) [spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+Caused by: java.lang.NoClassDefFoundError: com/onarandombox/commandhandler/Command
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:416) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:59) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:135) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	... 6 more
+Caused by: java.lang.ClassNotFoundException: com.onarandombox.commandhandler.Command
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:436) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:135) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:81) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:588) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:416) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:59) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:135) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	... 6 more
+[15:37:52] [Server thread/ERROR]: Could not load 'plugins\Multiverse-Inventories-3.0.0.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: com/onarandombox/commandhandler/Command
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:139) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:334) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:253) [spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.craftbukkit.v1_14_R1.CraftServer.loadPlugins(CraftServer.java:350) [spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at net.minecraft.server.v1_14_R1.DedicatedServer.init(DedicatedServer.java:202) [spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.run(MinecraftServer.java:775) [spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+Caused by: java.lang.NoClassDefFoundError: com/onarandombox/commandhandler/Command
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:416) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:59) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:135) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	... 6 more
+Caused by: java.lang.ClassNotFoundException: com.onarandombox.commandhandler.Command
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:436) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:135) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:81) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:588) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:416) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:59) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:135) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	... 6 more
+[15:37:52] [Server thread/ERROR]: Could not load 'plugins\Multiverse-NetherPortals-4.1.0.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: com/onarandombox/commandhandler/Command
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:139) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:334) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:253) [spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.craftbukkit.v1_14_R1.CraftServer.loadPlugins(CraftServer.java:350) [spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at net.minecraft.server.v1_14_R1.DedicatedServer.init(DedicatedServer.java:202) [spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at net.minecraft.server.v1_14_R1.MinecraftServer.run(MinecraftServer.java:775) [spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+Caused by: java.lang.NoClassDefFoundError: com/onarandombox/commandhandler/Command
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:416) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:59) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:135) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	... 6 more
+Caused by: java.lang.ClassNotFoundException: com.onarandombox.commandhandler.Command
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:436) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:135) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:81) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:588) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:416) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:59) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:135) ~[spigot-1.14.4.jar:git-Spigot-56f8471-56118c6]
+	... 6 more
+[15:37:52] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v4.4.1
+[15:37:52] [Server thread/INFO]: [LuckPermsChat] Loading LuckPermsChat v1.0.2
+[15:37:52] [Server thread/INFO]: [Elevators] Loading Elevators v2.1.1-SNAPSHOT
+[15:37:52] [Server thread/INFO]: [Vault] Loading Vault v1.7.2-b107
+[15:37:52] [Server thread/INFO]: [Multiverse-Core] Loading Multiverse-Core v2.5-b719
+[15:37:52] [Server thread/INFO]: [CMI] Loading CMI v8.6.15.8
+[15:37:52] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v4.4.1
+[15:37:52] [Server thread/INFO]:         __    
+
+[15:37:52] [Server thread/INFO]:   |    |__)   LuckPerms v4.4.1
+
+[15:37:52] [Server thread/INFO]:   |___ |      Running on Bukkit - CraftBukkit
+
+[15:37:52] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[15:37:52] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[15:37:53] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[15:37:53] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[15:37:53] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1312ms)
+[15:37:53] [Server thread/INFO]: [Vault] Enabling Vault v1.7.2-b107
+[15:37:53] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[15:37:53] [Server thread/INFO]: [Vault] Enabled Version 1.7.2-b107
+[15:37:53] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[15:37:53] [Server thread/INFO]: Preparing level "world"
+[15:37:53] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[15:37:55] [Server thread/INFO]: Loaded 6 recipes
+[15:37:55] [Server thread/INFO]: -------- World Settings For [world] --------
+[15:37:55] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[15:37:55] [Server thread/INFO]: Experience Merge Radius: 3.0
+[15:37:55] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Cane Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Melon Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Potato Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Vine Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Mob Spawn Range: 6
+[15:37:55] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[15:37:55] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[15:37:55] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[15:37:55] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313Ocean: 14357621 Shipwreck: 165745295 Slime: 987234911
+[15:37:55] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[15:37:55] [Server thread/INFO]: Max TNT Explosions: 100
+[15:37:55] [Server thread/INFO]: View Distance: 10
+[15:37:55] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[15:37:55] [Server thread/INFO]: Item Despawn Rate: 6000
+[15:37:55] [Server thread/INFO]: Item Merge Radius: 2.5
+[15:37:55] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[15:37:55] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[15:37:55] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[15:37:55] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[15:37:55] [Server thread/INFO]: Experience Merge Radius: 3.0
+[15:37:55] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Cane Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Melon Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Potato Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Vine Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Mob Spawn Range: 6
+[15:37:55] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[15:37:55] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[15:37:55] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[15:37:55] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313Ocean: 14357621 Shipwreck: 165745295 Slime: 987234911
+[15:37:55] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[15:37:55] [Server thread/INFO]: Max TNT Explosions: 100
+[15:37:55] [Server thread/INFO]: View Distance: 10
+[15:37:55] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[15:37:55] [Server thread/INFO]: Item Despawn Rate: 6000
+[15:37:55] [Server thread/INFO]: Item Merge Radius: 2.5
+[15:37:55] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[15:37:55] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[15:37:55] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[15:37:55] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[15:37:55] [Server thread/INFO]: Experience Merge Radius: 3.0
+[15:37:55] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Cane Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Melon Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Potato Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Vine Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[15:37:55] [Server thread/INFO]: Mob Spawn Range: 6
+[15:37:55] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[15:37:55] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[15:37:55] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[15:37:55] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313Ocean: 14357621 Shipwreck: 165745295 Slime: 987234911
+[15:37:55] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[15:37:55] [Server thread/INFO]: Max TNT Explosions: 100
+[15:37:55] [Server thread/INFO]: View Distance: 10
+[15:37:55] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[15:37:55] [Server thread/INFO]: Item Despawn Rate: 6000
+[15:37:55] [Server thread/INFO]: Item Merge Radius: 2.5
+[15:37:55] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[15:37:55] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[15:37:55] [Server thread/INFO]: Preparing start region for dimension 'world'/minecraft:overworld
+[15:37:56] [Server thread/INFO]: Preparing spawn area: 0%
+[15:37:56] [Server thread/INFO]: Preparing spawn area: 0%
+[15:37:56] [Server thread/INFO]: Preparing spawn area: 0%
+[15:37:56] [Server thread/INFO]: Time elapsed: 1332 ms
+[15:37:56] [Server thread/INFO]: Preparing start region for dimension 'world_nether'/minecraft:the_nether
+[15:37:57] [Server thread/INFO]: Preparing spawn area: 0%
+[15:37:57] [Server thread/INFO]: Preparing spawn area: 0%
+[15:37:57] [Server-Worker-2/INFO]: Preparing spawn area: 91%
+[15:37:58] [Server-Worker-2/INFO]: Preparing spawn area: 91%
+[15:37:58] [Server-Worker-3/INFO]: Preparing spawn area: 96%
+[15:37:59] [Server thread/INFO]: Time elapsed: 2150 ms
+[15:37:59] [Server thread/INFO]: Preparing start region for dimension 'world_the_end'/minecraft:the_end
+[15:37:59] [Server thread/INFO]: Preparing spawn area: 0%
+[15:37:59] [Server thread/INFO]: Preparing spawn area: 17%
+[15:37:59] [Server thread/INFO]: Time elapsed: 879 ms
+[15:37:59] [Server thread/INFO]: [LuckPermsChat] Enabling LuckPermsChat v1.0.2
+[15:37:59] [Server thread/INFO]: [Elevators] Enabling Elevators v2.1.1-SNAPSHOT
+[15:37:59] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v2.5-b719
+[15:37:59] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v2.5-b719" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [Rigby, fernferret, lithium3141, main--].
+[15:38:00] [Server thread/INFO]: -------- World Settings For [creative] --------
+[15:38:00] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[15:38:00] [Server thread/INFO]: Experience Merge Radius: 3.0
+[15:38:00] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[15:38:00] [Server thread/INFO]: Cane Growth Modifier: 100%
+[15:38:00] [Server thread/INFO]: Melon Growth Modifier: 100%
+[15:38:00] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[15:38:00] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[15:38:00] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[15:38:00] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[15:38:00] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[15:38:00] [Server thread/INFO]: Potato Growth Modifier: 100%
+[15:38:00] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[15:38:00] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[15:38:00] [Server thread/INFO]: Vine Growth Modifier: 100%
+[15:38:00] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[15:38:00] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[15:38:00] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[15:38:00] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[15:38:00] [Server thread/INFO]: Mob Spawn Range: 6
+[15:38:00] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[15:38:00] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[15:38:00] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[15:38:00] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313Ocean: 14357621 Shipwreck: 165745295 Slime: 987234911
+[15:38:00] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[15:38:00] [Server thread/INFO]: Max TNT Explosions: 100
+[15:38:00] [Server thread/INFO]: View Distance: 10
+[15:38:00] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[15:38:00] [Server thread/INFO]: Item Despawn Rate: 6000
+[15:38:00] [Server thread/INFO]: Item Merge Radius: 2.5
+[15:38:00] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[15:38:00] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[15:38:00] [Server thread/INFO]: Preparing start region for dimension 'creative'/minecraft:overworld
+[15:38:01] [Server thread/INFO]: Preparing spawn area: 0%
+[15:38:01] [Server thread/INFO]: Preparing spawn area: 0%
+[15:38:01] [Server thread/INFO]: Preparing spawn area: 0%
+[15:38:03] [Server-Worker-1/INFO]: Preparing spawn area: 83%
+[15:38:03] [Server-Worker-5/INFO]: Preparing spawn area: 83%
+[15:38:03] [Server-Worker-6/INFO]: Preparing spawn area: 83%
+[15:38:03] [Server-Worker-1/INFO]: Preparing spawn area: 83%
+[15:38:03] [Server-Worker-1/INFO]: Preparing spawn area: 83%
+[15:38:04] [Server-Worker-1/INFO]: Preparing spawn area: 83%
+[15:38:04] [Server-Worker-4/INFO]: Preparing spawn area: 84%
+[15:38:05] [Server-Worker-3/INFO]: Preparing spawn area: 90%
+[15:38:05] [Server thread/INFO]: Preparing spawn area: 99%
+[15:38:05] [Server thread/INFO]: Time elapsed: 5522 ms
+[15:38:05] [Server thread/INFO]: [Multiverse-Core] 4 - World(s) loaded.
+[15:38:05] [Server thread/INFO]: [Multiverse-Core] Version 2.5-b719 (API v20) Enabled - By Rigby, fernferret, lithium3141 and main--
+[15:38:05] [Server thread/INFO]: [CMI] Enabling CMI v8.6.15.8
+[15:38:06] [Server thread/INFO]: ????? ?????? ????
+
+[15:38:06] [Server thread/INFO]: ????? ? ?? ? ????
+
+[15:38:06] [Server thread/INFO]: ?? ?? ??????  ?? 
+
+[15:38:06] [Server thread/INFO]: ?? ?? ??????  ?? 
+
+[15:38:06] [Server thread/INFO]: ????? ?????? ????
+
+[15:38:06] [Server thread/INFO]: ????? ?????? ????
+
+[15:38:06] [Server thread/INFO]: _______________________________________________________
+
+[15:38:06] [Server thread/INFO]:   47 Enabled and 0 Disabled modules
+
+[15:38:07] [Server thread/INFO]:   Permission plugin: LuckPerms
+
+[15:38:07] [Server thread/INFO]:   Loaded (49) regular alias into memory. Took 30ms
+
+[15:38:07] [Server thread/INFO]:   Loaded (1) custom text's into memory. Took 2ms
+
+[15:38:07] [Server thread/INFO]:   3.28.0 data base type detected
+
+[15:38:07] [Server thread/INFO]:   Started SqLite data base. Took 358ms
+
+[15:38:07] [Server thread/INFO]: [CMI] Vault was found but economy engine is missing. Use one from list provided in https://dev.bukkit.org/bukkit-plugins/vault/
+
+[15:38:07] [Server thread/INFO]:   Vault was found but not economy plugin, you will have limited economy support
+
+[15:38:07] [Server thread/INFO]:   Loaded (5) warning categories into memory. Took 1ms
+
+[15:38:07] [Server thread/INFO]:   Loaded (3) warning commands into memory. Took 0ms
+
+[15:38:07] [Server thread/INFO]:   Loaded (122) custom mob heads into memory. Took 28ms
+
+[15:38:07] [Server thread/INFO]:   Loaded (0) cooldowns into memory. Took 31ms
+
+[15:38:07] [Server thread/INFO]:   Can't find world with (Hub) name
+
+[15:38:07] [Server thread/INFO]:   Can't find world with (Hub_nether) name
+
+[15:38:07] [Server thread/INFO]:   Can't find world with (Hub_the_end) name
+
+[15:38:07] [Server thread/INFO]:   Initializing BungeeCord
+
+[15:38:07] [Server thread/INFO]:   Loaded (7) ranks into memory. Took 7ms
+
+[15:38:07] [Server thread/INFO]:   Loaded (8) playtime rewards into memory. Took 2ms
+
+[15:38:08] [Server thread/INFO]:   Loaded (3) player data into memory. Took 9ms
+
+[15:38:08] [Server thread/INFO]:   Loaded (8) playtime records into memory. Took 2ms
+
+[15:38:08] [Server thread/INFO]:   Loaded (0) playtime reward records into memory. Took 0ms
+
+[15:38:08] [Server thread/INFO]:   Registered events. Took 94ms
+
+[15:38:08] [Server thread/INFO]:   Loaded (0) event action commands into memory. Took 6ms
+
+[15:38:08] [Server thread/INFO]:   Updated (EN) language file. Took 201ms
+
+[15:38:08] [Server thread/INFO]:   Loaded (245) worth values into memory. Took 27ms
+
+[15:38:08] [Server thread/INFO]:   Loaded (1) warps into memory. Took 2ms
+
+[15:38:08] [Server thread/INFO]:   Starting world timer.
+
+[15:38:08] [Server thread/INFO]:   Initializing world manager.
+
+[15:38:08] [Server thread/INFO]:   Loaded (5) schedules into memory. Took 8ms
+
+[15:38:08] [Server thread/INFO]:   Loaded (3) holograms into memory. Took 10ms
+
+[15:38:08] [Server thread/INFO]:   Loaded (0) skin cache entries into memory. Took 0ms
+
+[15:38:08] [Server thread/INFO]:   Version 8.6.15.8 has been enabled
+
+[15:38:08] [Server thread/INFO]: ???????????????????????????????????????????????????????
+
+[15:38:08] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[15:38:08] [Server thread/INFO]: Done (14.846s)! For help, type "help"
+[15:38:08] [Craft Scheduler Thread - 2/INFO]: [Vault] Checking for Updates ... 
+[15:38:09] [Craft Scheduler Thread - 2/INFO]: [Vault] No new version available
+[15:38:13] [Server thread/INFO]: Starting minecraft server version 1.14.4
+[15:38:13] [Server thread/INFO]: Loading properties
+[15:38:14] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-56f8471-56118c6 (MC: 1.14.4) (Implementing API version 1.14.4-R0.1-SNAPSHOT)
+[15:38:14] [Server thread/INFO]: Debug logging is disabled
+[15:38:14] [Server thread/INFO]: Using 4 threads for Netty based IO
+[15:38:14] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[15:38:14] [Server thread/INFO]: Default game type: SURVIVAL
+[15:38:14] [Server thread/INFO]: Generating keypair
+[15:38:14] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:38:14] [Server thread/INFO]: Using default channel type
+[15:38:15] [Server thread/WARN]: **** FAILED TO BIND TO PORT!
+[15:38:15] [Server thread/WARN]: The exception was: java.net.BindException: Address already in use: bind
+[15:38:15] [Server thread/WARN]: Perhaps a server is already running on that port?
+[15:38:15] [Server thread/INFO]: Stopping server
+[15:38:15] [Server thread/INFO]: Saving players
+[15:38:15] [Server thread/INFO]: Saving worlds

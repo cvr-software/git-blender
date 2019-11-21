@@ -1,0 +1,41 @@
+portals:
+  Survival->Hub:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: CostcoGames
+    location: 242.0,65.0,26.0:242.0,66.0,26.0
+    world: Survival
+    destination: world
+  Hub->Survival:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: CostcoGames
+    location: 114.0,89.0,118.0:114.0,90.0,118.0
+    world: world
+    destination: p:Survival->Hub
+  Creative->Hub:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: CostcoGames
+    location: 17.0,64.0,241.0:17.0,65.0,241.0
+    world: Creative
+    destination: world
+  Hub->Creative:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: CostcoGames
+    location: 117.0,89.0,122.0:117.0,90.0,122.0
+    world: world
+    destination: p:Creative->Hub

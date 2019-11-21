@@ -1,0 +1,89 @@
+CommandTutorial:
+  Loc: world;73.09;90.5;125.0
+  Interval: 1.0
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.22
+  SpacingIcon: 0.75
+  DownOrner: true
+  Interactable: false
+  Lines:
+  - 'Commands:'
+  - Teleport to a player with /tpa <playername>
+  - Teleport to world spawn with /spawn
+  - Warp to warps with /warp
+  - Teleport to homes with /home
+HubSign2:
+  Loc: Creative;17.5;65.0;241.5
+  Interval: 1.0
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.22
+  SpacingIcon: 0.5
+  DownOrner: true
+  Interactable: false
+  Lines:
+  - To Hub
+ElevatorTutorial:
+  Loc: world;75.09;90.5;118.5
+  Interval: 1.0
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.22
+  SpacingIcon: 0.5
+  DownOrner: true
+  Interactable: false
+  Lines:
+  - Elevators
+  - To make an elevator,
+  - use the sign format below.
+  - To change floor destination,
+  - Click the floor name on the sign.
+  - To initiate travel,
+  - Click [Elevator]
+Survival:
+  Loc: world;114.56;90.0;118.43
+  Interval: 1.0
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.22
+  SpacingIcon: 0.5
+  DownOrner: true
+  Interactable: false
+  Lines:
+  - Survival
+  - World
+HubSign1:
+  Loc: Survival;242.48;66.0;26.46
+  Interval: 1.0
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.22
+  SpacingIcon: 0.5
+  DownOrner: true
+  Interactable: false
+  Lines:
+  - To Hub
+PortalSign:
+  Loc: world;96.0;89.5;125.5
+  Interval: 1.0
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.22
+  SpacingIcon: 0.5
+  DownOrner: true
+  Interactable: false
+  Lines:
+  - Portals
+Creative:
+  Loc: world;117.51;90.0;122.49
+  Interval: 1.0
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.22
+  SpacingIcon: 0.5
+  DownOrner: true
+  Interactable: false
+  Lines:
+  - Creative
+  - World

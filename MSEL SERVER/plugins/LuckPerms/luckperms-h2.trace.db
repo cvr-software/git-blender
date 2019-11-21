@@ -1,0 +1,272 @@
+2019-11-16 21:39:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+2019-11-16 21:39:19 jdbc[3]: exception
+org.h2.jdbc.JdbcBatchUpdateException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1298)
+	at me.lucko.luckperms.common.storage.implementation.sql.SqlStorage.saveGroup(SqlStorage.java:718)
+	at me.lucko.luckperms.common.storage.Storage.lambda$saveGroup$11(Storage.java:196)
+	at me.lucko.luckperms.common.storage.Storage.lambda$makeFuture$1(Storage.java:94)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source)
+	at me.lucko.luckperms.common.plugin.scheduler.AbstractJavaScheduler$ErrorReportingRunnable.run(AbstractJavaScheduler.java:106)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:455)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:432)
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:844)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:175)
+	at org.h2.command.dml.Insert.update(Insert.java:132)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:267)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:200)
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1280)
+	at me.lucko.luckperms.common.storage.implementation.sql.SqlStorage.saveGroup(SqlStorage.java:718)
+	at me.lucko.luckperms.common.storage.Storage.lambda$saveGroup$11(Storage.java:196)
+	at me.lucko.luckperms.common.storage.Storage.lambda$makeFuture$1(Storage.java:94)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source)
+	at me.lucko.luckperms.common.plugin.scheduler.AbstractJavaScheduler$ErrorReportingRunnable.run(AbstractJavaScheduler.java:106)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2019-11-16 21:40:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+2019-11-16 21:40:16 jdbc[3]: exception
+org.h2.jdbc.JdbcBatchUpdateException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1298)
+	at me.lucko.luckperms.common.storage.implementation.sql.SqlStorage.saveGroup(SqlStorage.java:718)
+	at me.lucko.luckperms.common.storage.Storage.lambda$saveGroup$11(Storage.java:196)
+	at me.lucko.luckperms.common.storage.Storage.lambda$makeFuture$1(Storage.java:94)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source)
+	at me.lucko.luckperms.common.plugin.scheduler.AbstractJavaScheduler$ErrorReportingRunnable.run(AbstractJavaScheduler.java:106)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:455)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:432)
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:844)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:175)
+	at org.h2.command.dml.Insert.update(Insert.java:132)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:267)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:200)
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1280)
+	at me.lucko.luckperms.common.storage.implementation.sql.SqlStorage.saveGroup(SqlStorage.java:718)
+	at me.lucko.luckperms.common.storage.Storage.lambda$saveGroup$11(Storage.java:196)
+	at me.lucko.luckperms.common.storage.Storage.lambda$makeFuture$1(Storage.java:94)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source)
+	at me.lucko.luckperms.common.plugin.scheduler.AbstractJavaScheduler$ErrorReportingRunnable.run(AbstractJavaScheduler.java:106)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2019-11-16 21:45:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+2019-11-16 21:45:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+2019-11-16 21:45:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+2019-11-16 21:45:23 jdbc[3]: exception
+org.h2.jdbc.JdbcBatchUpdateException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1298)
+	at me.lucko.luckperms.common.storage.implementation.sql.SqlStorage.saveGroup(SqlStorage.java:718)
+	at me.lucko.luckperms.common.storage.Storage.lambda$saveGroup$11(Storage.java:196)
+	at me.lucko.luckperms.common.storage.Storage.lambda$makeFuture$1(Storage.java:94)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source)
+	at me.lucko.luckperms.common.plugin.scheduler.AbstractJavaScheduler$ErrorReportingRunnable.run(AbstractJavaScheduler.java:106)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:455)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:432)
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:844)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:175)
+	at org.h2.command.dml.Insert.update(Insert.java:132)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:267)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:200)
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1280)
+	at me.lucko.luckperms.common.storage.implementation.sql.SqlStorage.saveGroup(SqlStorage.java:718)
+	at me.lucko.luckperms.common.storage.Storage.lambda$saveGroup$11(Storage.java:196)
+	at me.lucko.luckperms.common.storage.Storage.lambda$makeFuture$1(Storage.java:94)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source)
+	at me.lucko.luckperms.common.plugin.scheduler.AbstractJavaScheduler$ErrorReportingRunnable.run(AbstractJavaScheduler.java:106)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+2019-11-16 21:45:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+2019-11-16 21:45:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+2019-11-16 21:45:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+2019-11-16 21:45:41 jdbc[3]: exception
+org.h2.jdbc.JdbcBatchUpdateException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1298)
+	at me.lucko.luckperms.common.storage.implementation.sql.SqlStorage.saveGroup(SqlStorage.java:718)
+	at me.lucko.luckperms.common.storage.Storage.lambda$saveGroup$11(Storage.java:196)
+	at me.lucko.luckperms.common.storage.Storage.lambda$makeFuture$1(Storage.java:94)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source)
+	at me.lucko.luckperms.common.plugin.scheduler.AbstractJavaScheduler$ErrorReportingRunnable.run(AbstractJavaScheduler.java:106)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:455)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:432)
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:844)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:175)
+	at org.h2.command.dml.Insert.update(Insert.java:132)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:267)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:200)
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1280)
+	at me.lucko.luckperms.common.storage.implementation.sql.SqlStorage.saveGroup(SqlStorage.java:718)
+	at me.lucko.luckperms.common.storage.Storage.lambda$saveGroup$11(Storage.java:196)
+	at me.lucko.luckperms.common.storage.Storage.lambda$makeFuture$1(Storage.java:94)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source)
+	at me.lucko.luckperms.common.plugin.scheduler.AbstractJavaScheduler$ErrorReportingRunnable.run(AbstractJavaScheduler.java:106)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+2019-11-16 21:46:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+2019-11-16 21:46:20 jdbc[3]: exception
+org.h2.jdbc.JdbcBatchUpdateException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1298)
+	at me.lucko.luckperms.common.storage.implementation.sql.SqlStorage.saveGroup(SqlStorage.java:718)
+	at me.lucko.luckperms.common.storage.Storage.lambda$saveGroup$11(Storage.java:196)
+	at me.lucko.luckperms.common.storage.Storage.lambda$makeFuture$1(Storage.java:94)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source)
+	at me.lucko.luckperms.common.plugin.scheduler.AbstractJavaScheduler$ErrorReportingRunnable.run(AbstractJavaScheduler.java:106)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:455)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:432)
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:844)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:175)
+	at org.h2.command.dml.Insert.update(Insert.java:132)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:267)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:200)
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1280)
+	at me.lucko.luckperms.common.storage.implementation.sql.SqlStorage.saveGroup(SqlStorage.java:718)
+	at me.lucko.luckperms.common.storage.Storage.lambda$saveGroup$11(Storage.java:196)
+	at me.lucko.luckperms.common.storage.Storage.lambda$makeFuture$1(Storage.java:94)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source)
+	at me.lucko.luckperms.common.plugin.scheduler.AbstractJavaScheduler$ErrorReportingRunnable.run(AbstractJavaScheduler.java:106)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2019-11-16 21:46:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+2019-11-16 21:46:31 jdbc[3]: exception
+org.h2.jdbc.JdbcBatchUpdateException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1298)
+	at me.lucko.luckperms.common.storage.implementation.sql.SqlStorage.saveGroup(SqlStorage.java:718)
+	at me.lucko.luckperms.common.storage.Storage.lambda$saveGroup$11(Storage.java:196)
+	at me.lucko.luckperms.common.storage.Storage.lambda$makeFuture$1(Storage.java:94)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source)
+	at me.lucko.luckperms.common.plugin.scheduler.AbstractJavaScheduler$ErrorReportingRunnable.run(AbstractJavaScheduler.java:106)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'creative, creative_nether, creative_the_end' (43)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:455)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:432)
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:844)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:175)
+	at org.h2.command.dml.Insert.update(Insert.java:132)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:267)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:200)
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1280)
+	at me.lucko.luckperms.common.storage.implementation.sql.SqlStorage.saveGroup(SqlStorage.java:718)
+	at me.lucko.luckperms.common.storage.Storage.lambda$saveGroup$11(Storage.java:196)
+	at me.lucko.luckperms.common.storage.Storage.lambda$makeFuture$1(Storage.java:94)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source)
+	at me.lucko.luckperms.common.plugin.scheduler.AbstractJavaScheduler$ErrorReportingRunnable.run(AbstractJavaScheduler.java:106)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2019-11-16 21:47:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'""creative"", ""creative_nether"", ""creative_the_end""' (49)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+2019-11-16 21:47:22 jdbc[3]: exception
+org.h2.jdbc.JdbcBatchUpdateException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'""creative"", ""creative_nether"", ""creative_the_end""' (49)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1298)
+	at me.lucko.luckperms.common.storage.implementation.sql.SqlStorage.saveGroup(SqlStorage.java:718)
+	at me.lucko.luckperms.common.storage.Storage.lambda$saveGroup$11(Storage.java:196)
+	at me.lucko.luckperms.common.storage.Storage.lambda$makeFuture$1(Storage.java:94)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source)
+	at me.lucko.luckperms.common.plugin.scheduler.AbstractJavaScheduler$ErrorReportingRunnable.run(AbstractJavaScheduler.java:106)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "WORLD VARCHAR(36) NOT NULL": "'""creative"", ""creative_nether"", ""creative_the_end""' (49)"; SQL statement:
+INSERT INTO luckperms_group_permissions(name, permission, value, server, world, expiry, contexts) VALUES(?, ?, ?, ?, ?, ?, ?) [22001-198]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:455)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:432)
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:844)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:175)
+	at org.h2.command.dml.Insert.update(Insert.java:132)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:267)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:200)
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1280)
+	at me.lucko.luckperms.common.storage.implementation.sql.SqlStorage.saveGroup(SqlStorage.java:718)
+	at me.lucko.luckperms.common.storage.Storage.lambda$saveGroup$11(Storage.java:196)
+	at me.lucko.luckperms.common.storage.Storage.lambda$makeFuture$1(Storage.java:94)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source)
+	at me.lucko.luckperms.common.plugin.scheduler.AbstractJavaScheduler$ErrorReportingRunnable.run(AbstractJavaScheduler.java:106)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)

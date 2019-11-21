@@ -1,0 +1,20 @@
+[
+  {
+    "uuid": "ed1afe44-4fea-411c-81cb-c4bb00f2a216",
+    "name": "CostcoGames",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "3094ffb6-3fad-400a-bb6a-19f12f0f374d",
+    "name": "_aristarchus_",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "2d0fba53-e011-4a55-b60b-50f61a6f1b3c",
+    "name": "Scroobtoob",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]
